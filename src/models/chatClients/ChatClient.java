@@ -2,6 +2,7 @@ package models.chatClients;
 
 import models.Message;
 
+import java.awt.event.ActionListener;
 import java.util.List;
 
 public interface ChatClient {
@@ -11,4 +12,7 @@ public interface ChatClient {
     boolean isAuthenticated();
     List<String> getLoggedUsers();
     List<Message> getMessages();
+
+    void addLoggedUsersListened(ActionListener listener);
+    void addMessageListened(ActionListener listener);
 }
