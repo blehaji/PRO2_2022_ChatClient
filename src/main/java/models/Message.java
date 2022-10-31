@@ -1,12 +1,17 @@
 package models;
 
+import com.google.gson.annotations.Expose;
+
 import java.time.LocalDateTime;
 
 public class Message {
+    @Expose
     private String author;
-    private String text;
-    private LocalDateTime created;
-    private boolean systemMessage;
+    @Expose
+    private final String text;
+    private final LocalDateTime created;
+    @Expose
+    private final boolean systemMessage;
 
     public static final int USER_LOGGED_IN = 1;
     public static final int USER_LOGGED_OUT = 2;
@@ -20,6 +25,8 @@ public class Message {
 
     public Message(int type, String user) {
         this.systemMessage = true;
+        this.created = LocalDateTime.now();
+
         switch (type) {
             case USER_LOGGED_IN:
                 this.text = user + " has logged in";
@@ -34,7 +41,7 @@ public class Message {
     }
 
     public String getAuthor() {
-        return author;
+        return systemMessage ? "SYSTEM MESSAGE" : author;
     }
 
     public String getText() {
@@ -54,7 +61,7 @@ public class Message {
         if (systemMessage) {
             return text;
         } else {
-            return String.format("%s <%s>: %s", author, created, text);
+            return String.format("%s <%s>: %s", author, created == null ? "?" : created, text);
         }
     }
 }
