@@ -1,12 +1,13 @@
 package models.chatClients.fileOperations;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
 import models.Message;
 
 import java.io.*;
 import java.lang.reflect.Type;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +18,8 @@ public class JsonChatFileOperations implements ChatFileOperations {
     public JsonChatFileOperations() {
         gson = new GsonBuilder()
                 .excludeFieldsWithoutExposeAnnotation()
+                .registerTypeAdapter(LocalDateTime.class, new LocalDatetimeSerializer())
+                .registerTypeAdapter(LocalDateTime.class, new LocalDatetimeDeserializer())
                 .setPrettyPrinting()
                 .create();
     }
@@ -41,14 +44,14 @@ public class JsonChatFileOperations implements ChatFileOperations {
             FileReader reader = new FileReader(MESSAGE_FILE);
             BufferedReader bufferedReader = new BufferedReader(reader);
 
-            String jsonText = "";
+            StringBuilder jsonText = new StringBuilder();
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                jsonText += line;
+                jsonText.append(line);
             }
 
             Type targetType = new TypeToken<ArrayList<Message>>(){}.getType();
-            messages = gson.fromJson(jsonText, targetType);
+            messages = gson.fromJson(jsonText.toString(), targetType);
 
             return messages;
         } catch (IOException e) {
@@ -56,5 +59,25 @@ public class JsonChatFileOperations implements ChatFileOperations {
         }
 
         return new ArrayList<>();
+    }
+}
+
+class LocalDatetimeSerializer implements JsonSerializer<LocalDateTime> {
+    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyy-MM-dd HH:mm:ss");
+
+    @Override
+    public JsonElement serialize(LocalDateTime localDateTime, Type type, JsonSerializationContext jsonSerializationContext) {
+        return new JsonPrimitive(formatter.format(localDateTime));
+    }
+}
+
+class LocalDatetimeDeserializer implements JsonDeserializer<LocalDateTime> {
+
+    @Override
+    public LocalDateTime deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
+        return LocalDateTime.parse(
+                jsonElement.getAsString(),
+                DateTimeFormatter.ofPattern("yyy-MM-dd HH:mm:ss")
+        );
     }
 }

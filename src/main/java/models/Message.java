@@ -9,6 +9,7 @@ public class Message {
     private String author;
     @Expose
     private final String text;
+    @Expose
     private final LocalDateTime created;
     @Expose
     private final boolean systemMessage;

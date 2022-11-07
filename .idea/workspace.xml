@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd0a906a-3445-42ff-b18f-eff17a90bdc3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/chatClients/FileChatClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/chatClients/fileOperations/ChatFileOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/chatClients/fileOperations/JsonChatFileOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="dd0a906a-3445-42ff-b18f-eff17a90bdc3" name="Changes" comment="Add add saving messages to JSON">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRO2_2022_ChatClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PRO2_2022_ChatClient.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/chatClients/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/chatClients/ChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/chatClients/InMemoryChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/chatClients/InMemoryChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/gui/LoggedUsersTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/gui/LoggedUsersTableModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/gui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/gui/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/chatClients/fileOperations/JsonChatFileOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/chatClients/fileOperations/JsonChatFileOperations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,19 +34,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ChatApp" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -86,7 +72,10 @@
       <workItem from="1666629475766" duration="148000" />
       <workItem from="1666691016754" duration="957000" />
       <workItem from="1666702682966" duration="599000" />
-      <workItem from="1667215059148" duration="4162000" />
+      <workItem from="1667215059148" duration="5528000" />
+      <workItem from="1667244153823" duration="335000" />
+      <workItem from="1667248797620" duration="8000" />
+      <workItem from="1667820340904" duration="825000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1665401618779</created>
@@ -102,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666617011741</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add add saving messages to JSON">
+      <created>1667219479854</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667219479854</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +130,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Add chat events and update GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add chat events and update GUI" />
+    <MESSAGE value="Add add saving messages to JSON" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add add saving messages to JSON" />
   </component>
 </project>
