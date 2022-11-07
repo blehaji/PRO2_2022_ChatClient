@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd0a906a-3445-42ff-b18f-eff17a90bdc3" name="Changes" comment="Add add saving messages to JSON">
+    <list default="true" id="dd0a906a-3445-42ff-b18f-eff17a90bdc3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derby_10_15_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derbyshared_10_15_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derbytools_10_15_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/RunDbConsole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/database/DatabaseOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/database/DbInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/database/JdbcDatabaseOperations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/chatClients/fileOperations/JsonChatFileOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/chatClients/fileOperations/JsonChatFileOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PRO2_2022_ChatClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PRO2_2022_ChatClient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +55,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.RunDbConsole">
     <configuration name="ChatApp" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="PRO2_2022_ChatClient" />
@@ -55,6 +63,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RunDbConsole" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RunDbConsole" />
+      <module name="PRO2_2022_ChatClient" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RunDbConsole" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -75,7 +95,7 @@
       <workItem from="1667215059148" duration="5528000" />
       <workItem from="1667244153823" duration="335000" />
       <workItem from="1667248797620" duration="8000" />
-      <workItem from="1667820340904" duration="825000" />
+      <workItem from="1667820340904" duration="2921000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1665401618779</created>
@@ -98,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667219479854</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add LocalDateTime serialization">
+      <created>1667821249084</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667821249084</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +158,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Add chat events and update GUI" />
     <MESSAGE value="Add add saving messages to JSON" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add add saving messages to JSON" />
+    <MESSAGE value="Add LocalDateTime serialization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add LocalDateTime serialization" />
   </component>
 </project>
