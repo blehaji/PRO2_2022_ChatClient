@@ -17,14 +17,13 @@ public class JdbcDatabaseOperations implements DatabaseOperations {
     public void addMessage(Message message) {
         String sql =
                 "INSERT INTO ChatMessages(author, text, created)" +
-                " VALUES (" +
-                        "'"+ message.getAuthor() +"'" +
-                        "'"+ message.getText() +"'" +
-                        "'"+ Timestamp.valueOf(message.getCreated()) +"'" +
-                ")";
+                " VALUES (?, ?, ?)";
         try {
-            Statement statement = connection.createStatement();
-            statement.executeUpdate(sql);
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setString(1, message.getAuthor());
+            statement.setString(2, message.getText());
+            statement.setTimestamp(3, Timestamp.valueOf(message.getCreated()));
+            statement.executeUpdate();
             statement.close();
         } catch (SQLException e) {
             e.printStackTrace();

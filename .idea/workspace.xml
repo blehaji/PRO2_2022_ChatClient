@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd0a906a-3445-42ff-b18f-eff17a90bdc3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derby_10_15_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derbyshared_10_15_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derbytools_10_15_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/RunDbConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/database/DatabaseOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/database/DbInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/database/JdbcDatabaseOperations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRO2_2022_ChatClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PRO2_2022_ChatClient.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/database/JdbcDatabaseOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/database/JdbcDatabaseOperations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +86,8 @@
       <workItem from="1667215059148" duration="5528000" />
       <workItem from="1667244153823" duration="335000" />
       <workItem from="1667248797620" duration="8000" />
-      <workItem from="1667820340904" duration="2921000" />
+      <workItem from="1667820340904" duration="3243000" />
+      <workItem from="1667832633969" duration="316000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1665401618779</created>
@@ -125,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667821249084</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add SQL backend">
+      <created>1667823308145</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667823308146</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +158,7 @@
     <MESSAGE value="Add chat events and update GUI" />
     <MESSAGE value="Add add saving messages to JSON" />
     <MESSAGE value="Add LocalDateTime serialization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add LocalDateTime serialization" />
+    <MESSAGE value="Add SQL backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add SQL backend" />
   </component>
 </project>
