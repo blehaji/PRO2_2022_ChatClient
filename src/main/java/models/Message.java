@@ -42,7 +42,7 @@ public class Message {
     }
 
     public String getAuthor() {
-        return systemMessage ? "SYSTEM MESSAGE" : author;
+        return systemMessage ? "SYSTEM" : author;
     }
 
     public String getText() {
@@ -59,7 +59,7 @@ public class Message {
 
     @Override
     public String toString() {
-        if (systemMessage) {
+        if (systemMessage || author.equals("SYSTEM")) {
             return text;
         } else {
             return String.format("%s <%s>: %s", author, created == null ? "?" : created, text);
