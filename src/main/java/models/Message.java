@@ -24,6 +24,13 @@ public class Message {
         systemMessage = false;
     }
 
+    public Message(String author, String text, LocalDateTime created) {
+        this.author = author;
+        this.text = text;
+        this.created = created;
+        systemMessage = false;
+    }
+
     public Message(int type, String user) {
         this.systemMessage = true;
         this.created = LocalDateTime.now();
